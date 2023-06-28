@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+
+
+h1{
+    text-align: center; text-size-adjust: 36px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+    transition: 0,7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+
+header.abajo{
+    background-color: gray;
+    padding: 15px 20px;
+
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a {
+    transition: background-color 0.3s;
+    padding: 1rem;
+  }
+  
+  nav a:hover {
+    background-color: #03989e;
+    color: #fafafa;
+  }
+  
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+
+    list-style: none;
+ }
+
+ header ul li a{
+    position: relative;
+    font-family: helvetica;
+    margin: 0px 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 0,7s;
+ }
+
+ .about{
+    text-align: center;
+    justify-content: center;
+    padding: 200px;
+
+   }
+
+   
+.about a{
+
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    background-color: #00191a;
+    font-weight: 500;
+    border-radius: 10px;
+    color: white;
+    padding: 20px 30px;
+    margin: 130px 130px;
+    
+}
+
+#button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00191a;
+    color: #fbfbfb;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+
+.hablemos{
+
+    background-color: #03989e ;
+    margin: 10px;
+    border: 10px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+   
+   }
+
+.contacto{
+
+    background-color: #03989e;
+}   
+
+
+.iconos{
+
+   display: flex;
+   justify-content:center ;
+   padding: 40px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 90px;
+    background-color: #00191a;
+    color:  #fafafa;
+    
+      
+   
+ }
+
+ .habilidades{
+
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #fafafa;
+ }
+
+

@@ -1,147 +1,334 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-    
-
 
 h1{
-    text-align: center; text-size-adjust: 36px;
+
+  font-size: 25px;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100;
-    display: flex;
-    justify-content: space-between;
-    transition: 0,7s;
-    padding: 30px 20px;
-    z-index: 10;
+h2{
+
+  font-size: 16px;
 }
 
-header.abajo{
-    background-color: gray;
-    padding: 15px 20px;
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
 
+.logo{
+  max-width: 30 rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.nav-menu-item a{
+  text-decoration: none;
+  color: #00191a;
 }
 
 
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 nav a {
-    transition: background-color 0.3s;
-    padding: 1rem;
-  }
-  
-  nav a:hover {
-    background-color: #03989e;
-    color: #fafafa;
-  }
-  
-
-header ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  transition: background-color 0.3s;
+  padding: 1rem;
+  align-items: right;
 }
-header ul li{
 
-    list-style: none;
- }
+nav a:hover {
+  background-color: #03989e;
+  color: #fafafa;
+}
 
- header ul li a{
-    position: relative;
-    font-family: helvetica;
-    margin: 0px 15px;
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+
+.container{
+
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+
+  }
+
+
+.sobremi-texto{
+  
+  text-align: justify;
+  justify-content: center;
+  padding: 80px;
+  margin: 0 30px;
+
+}
+
+.sobremi-texto h1{
+
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+
+#boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #03989e;
+    color: #fbfbfb;
     text-decoration: none;
-    color: black;
-    font-weight: 600;
-    transition: 0,7s;
- }
-
- .about{
     text-align: center;
-    justify-content: center;
-    padding: 200px;
-
-   }
-
-   
-.about a{
-
-    justify-content: center;
-    text-align: center;
-    width: 200px;
-    background-color: #00191a;
-    font-weight: 500;
-    border-radius: 10px;
-    color: white;
-    padding: 20px 30px;
-    margin: 130px 130px;
+    font-size: 15px;
+    border-radius: 18px;
+    margin-top: 30px;
+    margin-left: 250px;
+    margin-right: 140px;
     
 }
 
-#button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00191a;
-    color: #fbfbfb;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 15px;
-  }
+#boton:hover{
 
-.hablemos{
+  background-color: #00191a;
+  color: #03989e;
+}
 
-    background-color: #03989e ;
-    margin: 10px;
-    border: 10px;
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-    padding: 40px;
-   
-   }
 
+
+.experiencia{
+
+  text-align: justify;
+}
+
+.experiencia h1{
+  text-align: center;
+  padding: 40;
+  margin-bottom: 30px;
+  
+  
+}
+.habilidades{
+  text-align: justify;
+  justify-content: center;
+  background-color: #fafafa;
+  margin-bottom: 30px;
+  
+}
+
+
+
+.habilidades h1{
+  text-align: center;
+  padding: 40px;
+  
+}
 .contacto{
+  text-align: center;
+  background-color: #03989e;
+  border-radius: 10px;
+  
 
-    background-color: #03989e;
-}   
+
+}
+.contacto .iconos{
+display: flex;
+justify-content:center ;
 
 
-.iconos{
+}
 
-   display: flex;
-   justify-content:center ;
-   padding: 40px;
-
+.contacto .iconos :hover{
+  color: #fafafa;
 }
 
 footer{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    height: 90px;
-    background-color: #00191a;
-    color:  #fafafa;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 90px;
+  background-color: #00191a;
+  color:  #fafafa;
+  margin: 5px;
+  padding: 5px
+}
+
+@media screen and (max-width: 930px) {
+  .abrir-menu,
+  .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      background-color: #03989e;
+      cursor: pointer;
+  }
+
+  .abrir-menu {
+      color: #1c1c1c;
+  }
+
+  .cerrar-menu {
+      color: #013b3d;
+  }
+
+  .nav {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1c1c1c;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+  }
+
+  .nav.visible {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  .nav-menu {
+      flex-direction: column;
+      align-items: end;
+  }
+
+  .nav-menu li a {
+      color: #fff;
+
+  
+  }
+
+  h1{
+
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+.container{
+
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  }
+
+  .sobremi-texto{
+    background-color: #03989e;
+    color: #fbfbfb;
+
+  }
+
+  #boton{
     
-      
-   
- }
-
- .habilidades{
-
+    background-color: #00191a;
+    color: #fdfdfd;
     text-align: center;
-    justify-content: center;
-    padding: 40px;
-    background-color: #fafafa;
- }
+    
+    
+  }
+  
 
+}
 
+@media screen and (max-width: 930px) {
+  .abrir-menu,
+  .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      background-color: #03989e;
+      cursor: pointer;
+  }
+
+  .abrir-menu {
+      color: #1c1c1c;
+  }
+
+  .cerrar-menu {
+      color: #013b3d;
+  }
+
+  .nav {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1c1c1c;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+  }
+
+  .nav.visible {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  .nav-menu {
+      flex-direction: column;
+      align-items: end;
+  }
+
+  .nav-menu li a {
+      color: #ecececec;
+
+  
+  }
+
+  h1{
+
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+.container{
+
+  flex-direction: column;
+  align-items: center;
+  margin:0;
+  padding: 0;
+
+  }
+
+  .sobremi-texto{
+    background-color: #013b3d;
+    color: #fbfbfb;
+
+  }
+
+  #boton{
+
+    
+     
+    background-color: #00191a;
+    color: #fdfdfd;
+    text-align: center;
+    
+  }
+  
+
+}

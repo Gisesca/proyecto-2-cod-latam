@@ -3,36 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="
+  sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous"
+   referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
+  <title>Maria Gisela Escalona</title>
 </head>
 <body>
 
     <header>
+      <nav class="nav">
       
-      <img src="img/logo-gigi-oscuro.jpg" alt="logo">
-      
-      <button  class="abrir-menu"id="abrir"><i class="bi bi-list"></i></button>
+        <img src="img/logo-gigi-oscuro.jpg" alt="logo">
 
-      <nav class="nav" id="nav">
-          <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-          <ul class="nav-menu">
-              <li class="nav-menu-item"><a href="#sobremi" class="nav-menu-link nav-link">Sobre mi</a></li>
-              <li class="nav-menu-item"><a href="#experiencia" class="nav-menu-link nav-link">Experiencia</a></li>
-              <li class="nav-menu-item"><a href="#habilidades" class="nav-menu-link nav-link">Habilidades</a></li>
-              <li class="nav-menu-item"><a href="#contacto" class="nav-menu-link nav-link nav-menu-link_active" >Contacto</a></li>
-          </ul>
+        <input id="checkitem" type="checkbox" onclick="enableDarkMode()">
+        
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="nav-bar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#sobremi">Sobre mi</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>  
       </nav>
    </header>
    
   <main>
-      <div class="container" id="sobremi">
+      <div class="container">
           <div class="sobremi">
             <img src="img/1.jpg" width="320px" alt="Foto" id="imagenes">
           </div>
+          
+
     
-            <div class="sobremi-texto">
+          <div class="sobremi-texto">
                <h1>Hola! soy  Maria Gisela Escalona Briceño</h1>
            
               <p>
@@ -42,7 +53,7 @@
           
 
               <a id= "boton" href="Curriculum.pdf">Descargar cv</a>
-            </div>
+          </div>
         
       </div> 
            
@@ -74,25 +85,23 @@
           
       </div>
 
-     <div class="contacto" id="contacto">
+     <div class="contacto" id= "contacto">
             <h1>Contacto</h1>
 
-            <div class="iconos"> 
+        
+                <a href="mailto:mariagiselaescalona@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></i></a>
         
         
-                <a href="mailto:mariagiselaescalona@gmail.com" target="_blank"><img src="img/attach-email-outline-rounded.svg"  alt="icono email" > </a>
-        
-        
-                <a href="https://github.com/Gisesca?tab=repositories"target="blank"><img src="img/github-circle.svg" alt="icono git"></a>
+                <a href="https://github.com/Gisesca?tab=repositories"target="blank"><i class="fa-brands fa-github"></i></a>
         
 
-                <a href="https://www.linkedin.com/in/mar%C3%ADa-gisela-escalona-brice%C3%B1o-638471178/"target="blank" ><img src="img/linkedin-logo.svg" alt="icono linkedin"></a>
-            </div> 
+                <a href="https://www.linkedin.com/in/mar%C3%ADa-gisela-escalona-brice%C3%B1o-638471178/"target="blank" ><i class="fa-brands fa-linkedin"></i></a>
+            
      </div>
     
   </main>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 
     <footer>
                 <h2>Copyright © digitalstudioweb</h2>
